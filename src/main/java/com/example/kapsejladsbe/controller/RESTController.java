@@ -17,7 +17,7 @@ public class RESTController {
     @Autowired
     SailboatRepository sailboatRepository;
 
-    @GetMapping("/allboats")
+    @GetMapping("/allsailboats")
     public List<Sailboat> getSailboat(){
         return sailboatRepository.findAll();
     }
